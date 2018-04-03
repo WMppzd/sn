@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*reset css 重置样式   让浏览器表现一致*/
+.body {
+  font-size: 14px;
+  color: #333;
+}
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  /*避免宽度溢出  造成横向滚动条*/
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*点击高亮效果  清除  用transparent  透明*/
+  -webkit-tap-highlight-color:transparent;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+input[type="text"],input[type="search"],textarea {
+  border:none;
+  outline: none;
+  resize: none;
+  /*在移动端浏览  立体效果清除*/
+  -webkit-appearance:none;
+}
+/*common css 公共样式*/
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+
+
+//版心
+.sn_container{
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+}
